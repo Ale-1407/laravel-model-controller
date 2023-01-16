@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Movie;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index(){
-        return view('welcome');
+        // 'select * from books'
+        $movies = Movie::all();
+
+        return view('welcome', compact('movies'));
     }
 }
