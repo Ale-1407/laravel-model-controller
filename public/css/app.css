@@ -3,9 +3,16 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cards{
-    width: calc(100% / 6);
-    padding: 15px;
+    width: calc(100% / 7);
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+h1{
+    text-align: center;
 }
